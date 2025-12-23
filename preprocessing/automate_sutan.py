@@ -71,7 +71,8 @@ def run_preprocessing(input_path, output_path):
 
 if __name__ == "__main__":
     run_preprocessing(
-        "namadataset_raw/credit_card_fraud_dataset.csv",
+        "credit_card_fraud_dataset.csv",
         "preprocessing/credit_card_fraud_preprocessed.csv"
     )
+
 

@@ -45,7 +45,7 @@ def run_preprocessing(input_path, output_path):
 
     categorical_pipeline = OneHotEncoder(
         handle_unknown="ignore",
-        sparse=False
+        sparse_output=False
     )
 
     preprocessor = ColumnTransformer(
@@ -74,5 +74,6 @@ if __name__ == "__main__":
         "credit_card_fraud_dataset.csv",
         "preprocessing/credit_card_fraud_preprocessed.csv"
     )
+
 
 
